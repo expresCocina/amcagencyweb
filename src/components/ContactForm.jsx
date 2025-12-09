@@ -85,7 +85,15 @@ Mensaje: ${formData.message}`;
                                 <div className="method-icon">✉️</div>
                                 <div>
                                     <strong>Email</strong>
-                                    <p>hola@amcagencyweb.com</p>
+                                    <p>info@amcagencyweb.com</p>
+                                </div>
+                            </div>
+
+                            <div className="contact-method">
+                                <div className="method-icon">📍</div>
+                                <div>
+                                    <strong>Ubicación</strong>
+                                    <p>Neiva, Huila, Colombia</p>
                                 </div>
                             </div>
 

@@ -106,7 +106,7 @@ const PrivacyPolicyPage = () => {
                             Si tienes preguntas sobre esta Política de Privacidad o deseas ejercer tus derechos, contáctanos:
                         </p>
                         <ul>
-                            <li><strong>Email:</strong> privacidad@amcagencyweb.com</li>
+                            <li><strong>Email:</strong> info@amcagencyweb.com</li>
                             <li><strong>Teléfono:</strong> +57 300 123 4567</li>
                             <li><strong>Dirección:</strong> Bogotá, Colombia</li>
                         </ul>

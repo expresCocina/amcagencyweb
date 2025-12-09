@@ -47,7 +47,7 @@ const Footer = () => {
                         <h4>Contacto</h4>
                         <ul>
                             <li><a href="https://wa.me/573138537261" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-                            <li><a href="mailto:hola@amcagencyweb.com">Email</a></li>
+                            <li><a href="mailto:info@amcagencyweb.com">Email</a></li>
                             <li><a href="https://calendly.com/amc-agency" target="_blank" rel="noopener noreferrer">Agendar Llamada</a></li>
                         </ul>
                     </div>
