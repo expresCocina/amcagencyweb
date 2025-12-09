@@ -13,7 +13,7 @@ const CTA = () => {
             <a href="https://calendly.com/amc-agency" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
               Agendar llamada gratuita
             </a>
-            <a href="https://wa.me/573001234567" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/573138537261" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
               Enviar mensaje por WhatsApp
             </a>
           </div>

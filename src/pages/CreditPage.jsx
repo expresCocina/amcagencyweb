@@ -15,7 +15,7 @@ const CreditPage = () => {
                         </p>
                         <div className="page-ctas">
                             <a href="#simulador" className="btn btn-primary">Simular mi financiación</a>
-                            <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20financiación" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/573138537261?text=Hola,%20quiero%20información%20sobre%20financiación" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                                 Hablar con asesor
                             </a>
                         </div>

@@ -120,10 +120,10 @@ const FunnelsPage = () => {
                 <div className="container">
                     <div className="cta-box glass text-center">
                         <h2>Automatiza tu proceso de ventas en 30 días</h2>
-                        <p className="mt-3">Desde $1,500 USD. Pago a crédito disponible.</p>
+                        <p className="mt-3">Desde $1.200.000 COP. Pago a crédito disponible.</p>
                         <div className="page-ctas mt-4">
                             <a href="#contacto" className="btn btn-primary">Agendar consultoría estratégica</a>
-                            <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20automatización" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/573138537261?text=Hola,%20quiero%20información%20sobre%20automatización" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                                 Hablar por WhatsApp
                             </a>
                         </div>

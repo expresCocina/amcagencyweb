@@ -32,7 +32,7 @@ Teléfono: ${formData.phone}
 Servicio: ${formData.service}
 Mensaje: ${formData.message}`;
 
-        const whatsappUrl = `https://wa.me/573001234567?text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappUrl = `https://wa.me/573138537261?text=${encodeURIComponent(whatsappMessage)}`;
 
         // Abrir WhatsApp
         window.open(whatsappUrl, '_blank');
@@ -77,7 +77,7 @@ Mensaje: ${formData.message}`;
                                 <div className="method-icon">📱</div>
                                 <div>
                                     <strong>WhatsApp</strong>
-                                    <p>+57 300 123 4567</p>
+                                    <p>+57 313 853 7261</p>
                                 </div>
                             </div>
 
@@ -149,7 +149,7 @@ Mensaje: ${formData.message}`;
                                         value={formData.phone}
                                         onChange={handleChange}
                                         required
-                                        placeholder="+57 300 123 4567"
+                                        placeholder="+57 313 853 7261"
                                     />
                                 </div>
 

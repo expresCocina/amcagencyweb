@@ -131,7 +131,7 @@ const CasesPage = () => {
                         <h2>¿Listo para ser nuestro próximo caso de éxito?</h2>
                         <div className="page-ctas mt-4">
                             <a href="#contacto" className="btn btn-primary">Solicitar consultoría estratégica</a>
-                            <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/573138537261?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                                 Hablar por WhatsApp
                             </a>
                         </div>

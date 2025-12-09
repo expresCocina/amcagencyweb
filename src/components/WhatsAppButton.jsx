@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const whatsappNumber = '573001234567'; // Cambiar por el número real
+    const whatsappNumber = '573138537261'; // Cambiar por el número real
     const message = encodeURIComponent('Hola, vengo desde la web de AMC Agency Web');
 
     return (

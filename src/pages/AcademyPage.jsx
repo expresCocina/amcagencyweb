@@ -14,7 +14,7 @@ const AcademyPage = () => {
                         </p>
                         <div className="page-ctas">
                             <a href="#cursos" className="btn btn-primary">Ver cursos disponibles</a>
-                            <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20los%20cursos" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/573138537261?text=Hola,%20quiero%20información%20sobre%20los%20cursos" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                                 Hablar con asesor académico
                             </a>
                         </div>
@@ -57,7 +57,7 @@ const AcademyPage = () => {
                         <p className="mt-3">💳 Pago a crédito disponible - Hasta 6 cuotas sin interés</p>
                         <div className="page-ctas mt-4">
                             <a href="#contacto" className="btn btn-primary">Ver todos los cursos</a>
-                            <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20los%20cursos" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/573138537261?text=Hola,%20quiero%20información%20sobre%20los%20cursos" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                                 Hablar con asesor
                             </a>
                         </div>

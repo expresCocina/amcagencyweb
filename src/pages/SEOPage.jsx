@@ -165,10 +165,10 @@ const SEOPage = () => {
                 <div className="container">
                     <div className="cta-box glass text-center">
                         <h2>Empieza a recibir tráfico calificado desde Google</h2>
-                        <p className="mt-3">Planes desde $800 USD/mes. Pago a crédito disponible.</p>
+                        <p className="mt-3">Planes desde $550.000 COP/mes. Pago a crédito disponible.</p>
                         <div className="page-ctas mt-4">
                             <a href="#contacto" className="btn btn-primary">Solicitar auditoría SEO gratuita</a>
-                            <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20SEO" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/573138537261?text=Hola,%20quiero%20información%20sobre%20SEO" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                                 Hablar con especialista
                             </a>
                         </div>

@@ -79,7 +79,7 @@ const WebDevPage = () => {
                             <h3>Landing Page</h3>
                             <p className="mt-2">Una sola página ultra-optimizada para un objetivo específico.</p>
                             <div className="mt-3">
-                                <strong className="gradient-text">Desde $1,200 USD</strong>
+                                <strong className="gradient-text">Desde $350.000 COP</strong>
                                 <p style={{ fontSize: '14px', marginTop: '8px' }}>Tiempo: 2-3 semanas</p>
                             </div>
                         </div>
@@ -89,7 +89,7 @@ const WebDevPage = () => {
                             <h3>Sitio Corporativo</h3>
                             <p className="mt-2">5-10 páginas estratégicas con blog integrado para SEO.</p>
                             <div className="mt-3">
-                                <strong className="gradient-text">Desde $2,500 USD</strong>
+                                <strong className="gradient-text">Desde $950.000 COP</strong>
                                 <p style={{ fontSize: '14px', marginTop: '8px' }}>Tiempo: 4-6 semanas</p>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const WebDevPage = () => {
                             <h3>E-commerce</h3>
                             <p className="mt-2">Tienda online completa con carrito, pagos y panel de administración.</p>
                             <div className="mt-3">
-                                <strong className="gradient-text">Desde $3,800 USD</strong>
+                                <strong className="gradient-text">Desde $1.500.000 COP</strong>
                                 <p style={{ fontSize: '14px', marginTop: '8px' }}>Tiempo: 6-8 semanas</p>
                             </div>
                         </div>
