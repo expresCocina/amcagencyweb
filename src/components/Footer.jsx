@@ -54,7 +54,14 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; 2025 AMC Agency Web. Todos los derechos reservados.</p>
+                    <div className="footer-bottom-left">
+                        <p>&copy; 2025 AMC Agency Web. Todos los derechos reservados.</p>
+                        <div className="footer-legal">
+                            <Link to="/privacidad">Privacidad</Link>
+                            <span>•</span>
+                            <Link to="/terminos">Términos</Link>
+                        </div>
+                    </div>
                     <div className="footer-social">
                         <a href="https://www.facebook.com/DigitalBoostamc" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
                         <a href="https://www.instagram.com/amc_agencycol?igsh=MWlrNWZhb2dzdXk4Yw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>

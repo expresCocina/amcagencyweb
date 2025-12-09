@@ -1,0 +1,295 @@
+.budget-calculator-page {}
+
+.calculator-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+    align-items: start;
+}
+
+.calculator-services h2 {
+    margin-bottom: 8px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.service-option {
+    display: grid;
+    grid-template-columns: 40px 60px 1fr auto;
+    gap: 16px;
+    align-items: center;
+    padding: 24px;
+    background: var(--bg-container);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-option:hover {
+    border-color: rgba(255, 107, 0, 0.5);
+    transform: translateX(4px);
+}
+
+.service-option.selected {
+    border-color: var(--primary);
+    background: rgba(255, 107, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(255, 107, 0, 0.15);
+}
+
+.service-checkbox {
+    width: 28px;
+    height: 28px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.service-option.selected .service-checkbox {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-color: transparent;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+}
+
+.service-info {
+    min-width: 0;
+}
+
+.service-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+}
+
+.service-info p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.service-price {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--primary);
+    white-space: nowrap;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.addon-option {
+    position: relative;
+    padding: 20px;
+    background: var(--bg-container);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.addon-option:hover {
+    border-color: rgba(255, 107, 0, 0.5);
+    transform: translateY(-4px);
+}
+
+.addon-option.selected {
+    border-color: var(--primary);
+    background: rgba(255, 107, 0, 0.05);
+}
+
+.addon-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.addon-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.addon-price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.addon-checkbox {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.addon-option.selected .addon-checkbox {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.calculator-summary {
+    position: sticky;
+    top: 100px;
+}
+
+.summary-card {
+    padding: 30px;
+}
+
+.summary-card h3 {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.summary-services {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-services strong {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.summary-services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary-services li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    color: var(--text-secondary);
+    gap: 12px;
+}
+
+.summary-services li span {
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.summary-calculations {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.calc-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: var(--text-secondary);
+}
+
+.calc-row.discount {
+    color: #22c55e;
+}
+
+.calc-row.total {
+    font-size: 1.25rem;
+    padding-top: 16px;
+    border-top: 2px solid rgba(255, 107, 0, 0.3);
+    margin-top: 12px;
+}
+
+.discount-note {
+    font-size: 0.85rem;
+    color: #22c55e;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.summary-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.summary-note {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .calculator-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-summary {
+        position: static;
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-option {
+        grid-template-columns: 40px 1fr;
+        gap: 12px;
+    }
+
+    .service-icon {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        font-size: 2rem;
+    }
+
+    .service-checkbox {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .service-info {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    .service-price {
+        grid-column: 2;
+        grid-row: 3;
+        text-align: right;
+    }
+
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,160 @@
+.client-logos-section {
+    padding: 80px 0;
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+
+.section-header h2 {
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.logos-wrapper {
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logos-wrapper::before,
+.logos-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.logos-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-primary), transparent);
+}
+
+.logos-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-primary), transparent);
+}
+
+.logos-scroll {
+    display: flex;
+    gap: 40px;
+    animation: scroll 40s linear infinite;
+}
+
+.logos-scroll:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-item {
+    flex-shrink: 0;
+    width: 180px;
+    padding: 30px 20px;
+    background: var(--bg-container);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(255, 107, 0, 0.2);
+    border-color: rgba(255, 107, 0, 0.5);
+}
+
+.logo-emoji {
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.logo-item:hover .logo-emoji {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.logo-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.logo-industry {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.client-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.client-stat {
+    text-align: center;
+}
+
+.client-stat-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+
+.client-stat-label {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .client-logos-section {
+        padding: 60px 0;
+    }
+
+    .logos-scroll {
+        gap: 20px;
+    }
+
+    .logo-item {
+        width: 140px;
+        padding: 20px 15px;
+    }
+
+    .logo-emoji {
+        font-size: 2.5rem;
+    }
+
+    .client-stats {
+        gap: 30px;
+    }
+
+    .client-stat-number {
+        font-size: 2rem;
+    }
+}

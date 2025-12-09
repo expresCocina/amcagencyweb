@@ -48,8 +48,10 @@ const Navbar = () => {
                         <li><Link to="/seo">SEO</Link></li>
                         <li><Link to="/desarrollo-web">Desarrollo Web</Link></li>
                         <li><Link to="/embudos">Automatización</Link></li>
-                        <li><Link to="/cursos">Cursos</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/casos">Casos</Link></li>
+                        <li><Link to="/sobre-nosotros">Nosotros</Link></li>
+                        <li><Link to="/login" className="portal-link">🔐 Portal</Link></li>
                         <li><a href="#contacto" className="btn btn-primary btn-small">Contacto</a></li>
                     </ul>
                 </div>

@@ -107,8 +107,44 @@
     }
 }
 
+.footer-bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom-left {
+        align-items: flex-start;
+    }
+}
+
 .footer-bottom p {
     font-size: 14px;
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-legal a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: var(--primary);
+}
+
+.footer-legal span {
+    color: var(--text-secondary);
+    opacity: 0.5;
 }
 
 .footer-social {

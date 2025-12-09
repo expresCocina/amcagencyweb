@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Testimonials from '../components/Testimonials';
 import ContactForm from '../components/ContactForm';
 import './SEOPage.css';
@@ -12,6 +13,7 @@ const CasesPage = () => {
             industry: 'E-commerce sostenible',
             service: 'SEO + Desarrollo Web',
             duration: '6 meses',
+            demoUrl: '/demo/ecotienda',
             results: [
                 { label: 'Tráfico orgánico', value: '+1,150%', desc: '200 → 2,500 visitas/mes' },
                 { label: 'Ventas', value: '+320%', desc: '2-3 → 10-12 ventas/mes' },
@@ -27,6 +29,7 @@ const CasesPage = () => {
             industry: 'Bienes raíces',
             service: 'Embudos + Automatización',
             duration: '4 meses',
+            demoUrl: '/demo/inmobiliaria',
             results: [
                 { label: 'Automatización', value: '80%', desc: 'Del proceso de ventas' },
                 { label: 'Ahorro de tiempo', value: '-15h/sem', desc: 'Trabajo manual' },
@@ -42,6 +45,7 @@ const CasesPage = () => {
             industry: 'Salud dental',
             service: 'SEO Local + Google Ads',
             duration: '5 meses',
+            demoUrl: '/demo/clinica-dental',
             results: [
                 { label: 'Google Maps', value: '#1', desc: 'Búsquedas locales' },
                 { label: 'Llamadas', value: '+280%', desc: '8-10 → 35-40 pacientes/mes' },
@@ -49,6 +53,86 @@ const CasesPage = () => {
                 { label: 'Rating', value: '4.9/5', desc: '67 reseñas' }
             ],
             roi: '5.1x en 5 meses'
+        },
+        {
+            title: 'TechStart Colombia',
+            country: 'Colombia',
+            flag: '🇨🇴',
+            industry: 'Startup tecnológica',
+            service: 'Growth Hacking + Social Ads',
+            duration: '3 meses',
+            demoUrl: '/demo/techstart',
+            results: [
+                { label: 'Usuarios registrados', value: '+890%', desc: '450 → 4,500 usuarios' },
+                { label: 'CAC', value: '$12', desc: 'Costo por usuario' },
+                { label: 'Viral coefficient', value: '1.8x', desc: 'Crecimiento orgánico' },
+                { label: 'App Store rating', value: '4.7/5', desc: '230+ reviews' }
+            ],
+            roi: '7.5x en 3 meses'
+        },
+        {
+            title: 'Restaurante Sabor Argentino',
+            country: 'Argentina',
+            flag: '🇦🇷',
+            industry: 'Gastronomía',
+            service: 'Social Media + Influencers',
+            duration: '4 meses',
+            demoUrl: '/demo/restaurante',
+            results: [
+                { label: 'Seguidores IG', value: '+425%', desc: '2.8K → 14.7K' },
+                { label: 'Engagement', value: '8.2%', desc: 'Antes: 1.3%' },
+                { label: 'Reservas online', value: '+340%', desc: '15 → 66/semana' },
+                { label: 'Ventas delivery', value: '+180%', desc: 'Pedidos semanales' }
+            ],
+            roi: '5.8x en 4 meses'
+        },
+        {
+            title: 'Academia Digital Pro',
+            country: 'México',
+            flag: '🇲🇽',
+            industry: 'E-learning',
+            service: 'SEO + Google Ads + YouTube',
+            duration: '6 meses',
+            demoUrl: '/demo/academia',
+            results: [
+                { label: 'Alumnos inscritos', value: '+650%', desc: '120 → 900 alumnos' },
+                { label: 'Suscriptores YouTube', value: '15.2K', desc: 'Desde 0' },
+                { label: 'Tráfico orgánico', value: '+980%', desc: 'Google Search' },
+                { label: 'Revenue mensual', value: '+$28K', desc: 'USD adicionales' }
+            ],
+            roi: '8.2x en 6 meses'
+        },
+        {
+            title: 'Boutique Eleganza',
+            country: 'Chile',
+            flag: '🇨🇱',
+            industry: 'Moda',
+            service: 'Branding + E-commerce + Ads',
+            duration: '5 meses',
+            demoUrl: '/demo/boutique',
+            results: [
+                { label: 'Ventas online', value: '+520%', desc: '$8K → $49.6K/mes' },
+                { label: 'ROAS', value: '4.8x', desc: 'Retorno en ads' },
+                { label: 'Tasa conversión', value: '2.1% → 5.7%', desc: 'Checkout mejorado' },
+                { label: 'Ticket promedio', value: '+45%', desc: 'Valor de compra' }
+            ],
+            roi: '6.8x en 5 meses'
+        },
+        {
+            title: 'Consultora Empresarial Líder',
+            country: 'Perú',
+            flag: '🇵🇪',
+            industry: 'Consultoría B2B',
+            service: 'Lead Generation + LinkedIn',
+            duration: '4 meses',
+            demoUrl: '/demo/consultora',
+            results: [
+                { label: 'Leads calificados', value: '+740%', desc: '12 → 101/mes' },
+                { label: 'Propuestas enviadas', value: '+450%', desc: '5 → 27.5/mes' },
+                { label: 'Tasa cierre', value: '8% → 18%', desc: 'Conversión mejorada' },
+                { label: 'Revenue', value: '+$92K', desc: 'USD en 4 meses' }
+            ],
+            roi: '9.2x en 4 meses'
         }
     ];
 
@@ -93,8 +177,21 @@ const CasesPage = () => {
                                 ))}
                             </div>
 
-                            <div className="case-roi mt-4">
-                                <strong>ROI:</strong> <span className="gradient-text">{caseStudy.roi}</span>
+                            <div className="case-roi mt-4" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+                                <div>
+                                    <strong>ROI:</strong> <span className="gradient-text">{caseStudy.roi}</span>
+                                </div>
+                                <Link
+                                    to={caseStudy.demoUrl}
+                                    className="btn btn-primary"
+                                    style={{
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '8px'
+                                    }}
+                                >
+                                    Ver Demo en Vivo 🚀
+                                </Link>
                             </div>
                         </div>
                     ))}
