@@ -93,3 +93,108 @@ export const trackPageView = () => {
         ReactPixel.pageView();
     }
 };
+
+// ========== LEAD TRACKING FUNCTIONS ==========
+
+/**
+ * Track when user clicks on contact CTA
+ */
+export const trackContactClick = (source = 'unknown') => {
+    trackEvent('Contact', {
+        category: 'Lead Generation',
+        label: source,
+        source: source,
+        action: 'click_contact_button'
+    });
+};
+
+/**
+ * Track when user clicks on booking/scheduling CTA
+ */
+export const trackBookingClick = (source = 'unknown') => {
+    trackEvent('Schedule', {
+        category: 'Lead Generation',
+        label: source,
+        source: source,
+        action: 'click_booking_button'
+    });
+};
+
+/**
+ * Track when user clicks on calculator CTA
+ */
+export const trackCalculatorClick = (source = 'unknown') => {
+    trackEvent('ViewContent', {
+        category: 'Lead Generation',
+        label: source,
+        content_name: 'Budget Calculator',
+        source: source,
+        action: 'click_calculator_button'
+    });
+};
+
+/**
+ * Track when user submits contact form
+ */
+export const trackContactFormSubmit = (formData = {}) => {
+    trackEvent('Lead', {
+        category: 'Lead Generation',
+        label: 'Contact Form',
+        form_type: 'contact',
+        ...formData
+    }, {
+        email: formData.email,
+        phone: formData.phone
+    });
+};
+
+/**
+ * Track when user completes booking
+ */
+export const trackBookingComplete = (bookingData = {}) => {
+    trackEvent('Lead', {
+        category: 'Lead Generation',
+        label: 'Booking Complete',
+        form_type: 'booking',
+        ...bookingData
+    }, {
+        email: bookingData.email,
+        phone: bookingData.phone
+    });
+};
+
+/**
+ * Track when user generates a demo
+ */
+export const trackDemoGenerated = (demoData = {}) => {
+    trackEvent('GenerateLead', {
+        category: 'Lead Generation',
+        label: 'Demo Generated',
+        business_type: demoData.businessType,
+        design_style: demoData.designStyle,
+        color_scheme: demoData.colors
+    });
+};
+
+/**
+ * Track when user downloads demo
+ */
+export const trackDemoDownload = () => {
+    trackEvent('Download', {
+        category: 'Engagement',
+        label: 'Demo Download',
+        content_type: 'demo_mockup'
+    });
+};
+
+/**
+ * Track calculator result view
+ */
+export const trackCalculatorResult = (budget = 0) => {
+    trackEvent('ViewContent', {
+        category: 'Engagement',
+        label: 'Calculator Result',
+        value: budget,
+        currency: 'COP'
+    });
+};

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import TrackedLink from './TrackedLink';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -53,7 +54,11 @@ const Navbar = () => {
                         <li><Link to="/casos">Casos</Link></li>
                         <li><Link to="/sobre-nosotros">Nosotros</Link></li>
                         <li><Link to="/login" className="portal-link">🔐 Portal</Link></li>
-                        <li><a href="#contacto" className="btn btn-primary btn-small">Contacto</a></li>
+                        <li>
+                            <TrackedLink href="#contacto" type="contact" source="navbar" className="btn btn-primary btn-small">
+                                Contacto
+                            </TrackedLink>
+                        </li>
                     </ul>
                 </div>
             </div>

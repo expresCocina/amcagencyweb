@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import TrackedLink from './TrackedLink';
+import { trackDemoDownload } from '../utils/analytics';
 import './DemoPreview.css';
 
 const DemoPreview = ({ demoData, onRegenerate, onDownload }) => {
@@ -33,6 +35,11 @@ const DemoPreview = ({ demoData, onRegenerate, onDownload }) => {
 
     const handleZoomToggle = () => {
         setIsZoomed(!isZoomed);
+    };
+
+    const handleDownload = () => {
+        trackDemoDownload();
+        onDownload();
     };
 
     return (
@@ -90,7 +97,7 @@ const DemoPreview = ({ demoData, onRegenerate, onDownload }) => {
 
                         <button
                             className="action-btn btn-download"
-                            onClick={onDownload}
+                            onClick={handleDownload}
                         >
                             <span className="btn-icon">⬇️</span>
                             Descargar
@@ -103,14 +110,14 @@ const DemoPreview = ({ demoData, onRegenerate, onDownload }) => {
                             <p>Convierte este concepto en un sitio web real y profesional</p>
                         </div>
                         <div className="cta-buttons">
-                            <a href="/agendar" className="btn btn-primary">
+                            <TrackedLink href="/agendar" type="booking" source="demo_preview" className="btn btn-primary">
                                 <span className="btn-icon">📅</span>
                                 Agendar Consulta
-                            </a>
-                            <a href="/calculadora" className="btn btn-secondary">
+                            </TrackedLink>
+                            <TrackedLink href="/calculadora" type="calculator" source="demo_preview" className="btn btn-secondary">
                                 <span className="btn-icon">💰</span>
                                 Calcular Presupuesto
-                            </a>
+                            </TrackedLink>
                         </div>
                     </div>
 

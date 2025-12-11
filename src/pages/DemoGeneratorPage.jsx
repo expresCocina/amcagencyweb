@@ -2,6 +2,7 @@ import { useState } from 'react';
 import DemoGeneratorForm from '../components/DemoGeneratorForm';
 import DemoPreview from '../components/DemoPreview';
 import { generateWebsiteMockup } from '../utils/demoGenerator';
+import { trackDemoGenerated, trackDemoDownload, trackBookingClick, trackCalculatorClick } from '../utils/analytics';
 import './DemoGeneratorPage.css';
 
 const DemoGeneratorPage = () => {
@@ -40,6 +41,9 @@ const DemoGeneratorPage = () => {
             };
 
             setGeneratedDemo(demoData);
+
+            // Track demo generation
+            trackDemoGenerated(formData);
 
             // Scroll to preview
             setTimeout(() => {

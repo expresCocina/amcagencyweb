@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import TrackedLink from './TrackedLink';
 import './Hero.css';
 
 const Hero = () => {
@@ -14,7 +15,9 @@ const Hero = () => {
                         Agencia especializada en SEO, desarrollo web y automatización para empresas en Latinoamérica que quieren crecer sin límites.
                     </p>
                     <div className="hero-ctas">
-                        <a href="#contacto" className="btn btn-primary">Solicitar cotización gratis</a>
+                        <TrackedLink href="#contacto" type="contact" source="hero" className="btn btn-primary">
+                            Solicitar cotización gratis
+                        </TrackedLink>
                         <Link to="/casos" className="btn btn-secondary">Ver casos de éxito →</Link>
                     </div>
                     <div className="hero-stats">
