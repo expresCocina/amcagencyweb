@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template de Optimización Web - AMC Agency Web</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cover {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0A0E17 0%, #1a1f2e 100%);
+            color: white;
+            page-break-after: always;
+        }
+
+        .cover h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #00F0FF, #A020F0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cover .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #ccc;
+        }
+
+        h2 {
+            color: #00F0FF;
+            border-bottom: 3px solid #00F0FF;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: #A020F0;
+            margin-top: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #00F0FF;
+            color: white;
+        }
+
+        .audit-table td:first-child {
+            width: 40%;
+        }
+
+        .audit-table td:nth-child(2) {
+            width: 15%;
+            text-align: center;
+        }
+
+        .audit-table td:nth-child(3) {
+            width: 45%;
+        }
+
+        .score-box {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .score-excellent {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .score-good {
+            background: #8BC34A;
+            color: white;
+        }
+
+        .score-fair {
+            background: #FFC107;
+            color: #333;
+        }
+
+        .score-poor {
+            background: #FF5722;
+            color: white;
+        }
+
+        .highlight-box {
+            background: #f0f8ff;
+            border-left: 4px solid #00F0FF;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid #00F0FF;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- PORTADA -->
+    <div class="cover">
+        <h1>TEMPLATE DE<br>OPTIMIZACIÓN WEB</h1>
+        <div class="subtitle">Audita y Mejora tu Sitio<br>en 7 Pasos</div>
+        <div style="font-size: 18px; margin: 40px 0;">
+            🚀 Velocidad y Performance<br>
+            🎯 SEO y Posicionamiento<br>
+            💰 Conversión y UX
+        </div>
+        <div style="font-size: 32px; font-weight: bold; margin-top: 60px;">AMC Agency Web</div>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="page-break"></div>
+
+    <h2>Cómo Usar Este Template</h2>
+    <div class="section">
+        <p>Este template te guiará paso a paso para auditar y optimizar tu sitio web. Para cada sección:</p>
+        <ol>
+            <li><strong>Evalúa</strong> el estado actual de tu sitio</li>
+            <li><strong>Marca</strong> los items completados</li>
+            <li><strong>Prioriza</strong> las mejoras según impacto</li>
+            <li><strong>Implementa</strong> las optimizaciones</li>
+            <li><strong>Mide</strong> los resultados</li>
+        </ol>
+
+        <div class="highlight-box">
+            <strong>Escala de Puntuación:</strong><br>
+            <span class="score-box score-excellent">90-100: Excelente</span>
+            <span class="score-box score-good">70-89: Bueno</span>
+            <span class="score-box score-fair">50-69: Regular</span>
+            <span class="score-box score-poor">0-49: Necesita Mejora</span>
+        </div>
+    </div>
+
+    <h2>1. Velocidad y Performance</h2>
+    <div class="section">
+        <h3>Herramientas de Medición</h3>
+        <ul>
+            <li>Google PageSpeed Insights: <a href="https://pagespeed.web.dev/">pagespeed.web.dev</a></li>
+            <li>GTmetrix: <a href="https://gtmetrix.com/">gtmetrix.com</a></li>
+            <li>WebPageTest: <a href="https://www.webpagetest.org/">webpagetest.org</a></li>
+        </ul>
+
+        <h3>Checklist de Optimización</h3>
+        <table class="audit-table">
+            <tr>
+                <th>Item</th>
+                <th>Estado</th>
+                <th>Acción Requerida</th>
+            </tr>
+            <tr>
+                <td>Tiempo de carga &lt; 3 segundos</td>
+                <td>☐</td>
+                <td>Medir con PageSpeed Insights. Objetivo: &lt;3s en móvil</td>
+            </tr>
+            <tr>
+                <td>Imágenes optimizadas</td>
+                <td>☐</td>
+                <td>Comprimir con TinyPNG, usar WebP, lazy loading</td>
+            </tr>
+            <tr>
+                <td>CSS y JS minificados</td>
+                <td>☐</td>
+                <td>Minificar archivos, eliminar código no usado</td>
+            </tr>
+            <tr>
+                <td>Caché del navegador</td>
+                <td>☐</td>
+                <td>Configurar headers de caché (1 año para estáticos)</td>
+            </tr>
+            <tr>
+                <td>CDN implementado</td>
+                <td>☐</td>
+                <td>Usar Cloudflare, AWS CloudFront o similar</td>
+            </tr>
+            <tr>
+                <td>Compresión GZIP/Brotli</td>
+                <td>☐</td>
+                <td>Habilitar en servidor para reducir tamaño</td>
+            </tr>
+            <tr>
+                <td>Fonts optimizados</td>
+                <td>☐</td>
+                <td>Usar system fonts o Google Fonts con preload</td>
+            </tr>
+            <tr>
+                <td>Eliminar render-blocking</td>
+                <td>☐</td>
+                <td>Defer/async para JS, critical CSS inline</td>
+            </tr>
+        </table>
+
+        <p><strong>Puntuación Actual:</strong> _____ / 100</p>
+        <p><strong>Objetivo:</strong> 90+ en móvil y desktop</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>2. SEO Técnico</h2>
+    <div class="section">
+        <h3>Herramientas de Auditoría</h3>
+        <ul>
+            <li>Google Search Console</li>
+            <li>Screaming Frog SEO Spider</li>
+            <li>Ahrefs Site Audit</li>
+        </ul>
+
+        <table class="audit-table">
+            <tr>
+                <th>Item</th>
+                <th>Estado</th>
+                <th>Acción Requerida</th>
+            </tr>
+            <tr>
+                <td>Sitemap XML enviado</td>
+                <td>☐</td>
+                <td>Crear sitemap.xml y enviar a Search Console</td>
+            </tr>
+            <tr>
+                <td>Robots.txt configurado</td>
+                <td>☐</td>
+                <td>Bloquear páginas admin, permitir rastreo</td>
+            </tr>
+            <tr>
+                <td>HTTPS implementado</td>
+                <td>☐</td>
+                <td>Instalar certificado SSL, redirigir HTTP→HTTPS</td>
+            </tr>
+            <tr>
+                <td>URLs amigables</td>
+                <td>☐</td>
+                <td>Cortas, descriptivas, con keywords, sin parámetros</td>
+            </tr>
+            <tr>
+                <td>Canonical tags</td>
+                <td>☐</td>
+                <td>Evitar contenido duplicado, especificar versión canónica</td>
+            </tr>
+            <tr>
+                <td>Schema markup</td>
+                <td>☐</td>
+                <td>Implementar datos estructurados (JSON-LD)</td>
+            </tr>
+            <tr>
+                <td>Mobile-friendly</td>
+                <td>☐</td>
+                <td>Responsive design, pasar Mobile-Friendly Test</td>
+            </tr>
+            <tr>
+                <td>Errores 404 corregidos</td>
+                <td>☐</td>
+                <td>Revisar en Search Console, crear redirects 301</td>
+            </tr>
+            <tr>
+                <td>Breadcrumbs implementados</td>
+                <td>☐</td>
+                <td>Mejorar navegación y SEO con breadcrumbs</td>
+            </tr>
+        </table>
+
+        <p><strong>Errores Críticos Encontrados:</strong> _____</p>
+        <p><strong>Objetivo:</strong> 0 errores críticos</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>3. SEO On-Page</h2>
+    <div class="section">
+        <table class="audit-table">
+            <tr>
+                <th>Item</th>
+                <th>Estado</th>
+                <th>Acción Requerida</th>
+            </tr>
+            <tr>
+                <td>Title tags optimizados</td>
+                <td>☐</td>
+                <td>50-60 caracteres, keyword al inicio, únicos</td>
+            </tr>
+            <tr>
+                <td>Meta descriptions</td>
+                <td>☐</td>
+                <td>150-160 caracteres, incluir CTA, únicas</td>
+            </tr>
+            <tr>
+                <td>H1 único por página</td>
+                <td>☐</td>
+                <td>Un solo H1, incluir keyword principal</td>
+            </tr>
+            <tr>
+                <td>Estructura H2-H6</td>
+                <td>☐</td>
+                <td>Jerarquía lógica, keywords en headings</td>
+            </tr>
+            <tr>
+                <td>Contenido de calidad</td>
+                <td>☐</td>
+                <td>Mínimo 1,500 palabras, original, útil</td>
+            </tr>
+            <tr>
+                <td>Keywords naturales</td>
+                <td>☐</td>
+                <td>Density 1-2%, incluir LSI keywords</td>
+            </tr>
+            <tr>
+                <td>Alt text en imágenes</td>
+                <td>☐</td>
+                <td>Descriptivo, incluir keywords cuando relevante</td>
+            </tr>
+            <tr>
+                <td>Enlaces internos</td>
+                <td>☐</td>
+                <td>3-5 por página, anchor text descriptivo</td>
+            </tr>
+            <tr>
+                <td>Enlaces externos</td>
+                <td>☐</td>
+                <td>A fuentes autoritativas, abrir en nueva pestaña</td>
+            </tr>
+        </table>
+
+        <p><strong>Páginas Optimizadas:</strong> _____ / _____</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>4. Experiencia de Usuario (UX)</h2>
+    <div class="section">
+        <h3>Herramientas de Análisis</h3>
+        <ul>
+            <li>Google Analytics 4 - Comportamiento de usuarios</li>
+            <li>Hotjar - Heatmaps y grabaciones</li>
+            <li>Crazy Egg - Mapas de clics</li>
+        </ul>
+
+        <table class="audit-table">
+            <tr>
+                <th>Item</th>
+                <th>Estado</th>
+                <th>Acción Requerida</th>
+            </tr>
+            <tr>
+                <td>Navegación intuitiva</td>
+                <td>☐</td>
+                <td>Menú claro, máximo 7 items, lógico</td>
+            </tr>
+            <tr>
+                <td>Diseño responsive</td>
+                <td>☐</td>
+                <td>Funciona en móvil, tablet, desktop</td>
+            </tr>
+            <tr>
+                <td>CTAs visibles</td>
+                <td>☐</td>
+                <td>Botones destacados, texto claro, ubicación estratégica</td>
+            </tr>
+            <tr>
+                <td>Formularios simples</td>
+                <td>☐</td>
+                <td>Mínimo campos, validación clara, autocompletado</td>
+            </tr>
+            <tr>
+                <td>Legibilidad</td>
+                <td>☐</td>
+                <td>Fuente 16px+, contraste 4.5:1+, líneas cortas</td>
+            </tr>
+            <tr>
+                <td>Espacios en blanco</td>
+                <td>☐</td>
+                <td>No saturar, respirar, jerarquía visual</td>
+            </tr>
+            <tr>
+                <td>Búsqueda interna</td>
+                <td>☐</td>
+                <td>Visible, funcional, con sugerencias</td>
+            </tr>
+            <tr>
+                <td>Accesibilidad</td>
+                <td>☐</td>
+                <td>WCAG 2.1 AA, navegación por teclado, screen readers</td>
+            </tr>
+        </table>
+
+        <p><strong>Bounce Rate:</strong> _____% (Objetivo: &lt;40%)</p>
+        <p><strong>Tiempo en Sitio:</strong> _____ min (Objetivo: &gt;2 min)</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>5. Optimización de Conversión (CRO)</h2>
+    <div class="section">
+        <table class="audit-table">
+            <tr>
+                <th>Item</th>
+                <th>Estado</th>
+                <th>Acción Requerida</th>
+            </tr>
+            <tr>
+                <td>Propuesta de valor clara</td>
+                <td>☐</td>
+                <td>Above the fold, beneficios claros, diferenciación</td>
+            </tr>
+            <tr>
+                <td>Prueba social</td>
+                <td>☐</td>
+                <td>Testimonios, reseñas, logos de clientes, casos de éxito</td>
+            </tr>
+            <tr>
+                <td>Urgencia/escasez</td>
+                <td>☐</td>
+                <td>Ofertas limitadas, contador, stock limitado</td>
+            </tr>
+            <tr>
+                <td>Garantías</td>
+                <td>☐</td>
+                <td>Devolución, satisfacción, seguridad de pago</td>
+            </tr>
+            <tr>
+                <td>Proceso de checkout</td>
+                <td>☐</td>
+                <td>Máximo 3 pasos, guest checkout, múltiples pagos</td>
+            </tr>
+            <tr>
+                <td>Chat en vivo</td>
+                <td>☐</td>
+                <td>Disponible, respuesta rápida, proactivo</td>
+            </tr>
+            <tr>
+                <td>Exit-intent popup</td>
+                <td>☐</td>
+                <td>Oferta especial, lead magnet, descuento</td>
+            </tr>
+            <tr>
+                <td>A/B testing activo</td>
+                <td>☐</td>
+                <td>Probar headlines, CTAs, colores, layouts</td>
+            </tr>
+        </table>
+
+        <p><strong>Tasa de Conversión Actual:</strong> _____% </p>
+        <p><strong>Objetivo:</strong> Aumentar 50% en 90 días</p>
+
+        <div class="highlight-box">
+            <strong>Fórmula de Conversión:</strong><br>
+            Conversión = (Conversiones / Visitantes) × 100<br><br>
+            <strong>Ejemplo:</strong> 50 conversiones / 2,000 visitantes = 2.5%
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>6. Seguridad</h2>
+    <div class="section">
+        <table class="audit-table">
+            <tr>
+                <th>Item</th>
+                <th>Estado</th>
+                <th>Acción Requerida</th>
+            </tr>
+            <tr>
+                <td>Certificado SSL válido</td>
+                <td>☐</td>
+                <td>HTTPS en todo el sitio, renovación automática</td>
+            </tr>
+            <tr>
+                <td>Backups automáticos</td>
+                <td>☐</td>
+                <td>Diarios, almacenamiento externo, probados</td>
+            </tr>
+            <tr>
+                <td>Firewall activo</td>
+                <td>☐</td>
+                <td>WAF (Cloudflare, Sucuri), bloqueo de IPs maliciosas</td>
+            </tr>
+            <tr>
+                <td>Plugins/software actualizado</td>
+                <td>☐</td>
+                <td>Última versión, eliminar no usados</td>
+            </tr>
+            <tr>
+                <td>Contraseñas fuertes</td>
+                <td>☐</td>
+                <td>12+ caracteres, 2FA habilitado</td>
+            </tr>
+            <tr>
+                <td>Protección contra malware</td>
+                <td>☐</td>
+                <td>Scanner automático, limpieza regular</td>
+            </tr>
+            <tr>
+                <td>Headers de seguridad</td>
+                <td>☐</td>
+                <td>CSP, X-Frame-Options, HSTS</td>
+            </tr>
+        </table>
+
+        <p><strong>Última Auditoría de Seguridad:</strong> _____</p>
+        <p><strong>Vulnerabilidades Encontradas:</strong> _____</p>
+    </div>
+
+    <h2>7. Analytics y Tracking</h2>
+    <div class="section">
+        <table class="audit-table">
+            <tr>
+                <th>Item</th>
+                <th>Estado</th>
+                <th>Acción Requerida</th>
+            </tr>
+            <tr>
+                <td>Google Analytics 4</td>
+                <td>☐</td>
+                <td>Instalado, configurado, objetivos definidos</td>
+            </tr>
+            <tr>
+                <td>Google Search Console</td>
+                <td>☐</td>
+                <td>Propiedad verificada, sitemap enviado</td>
+            </tr>
+            <tr>
+                <td>Google Tag Manager</td>
+                <td>☐</td>
+                <td>Implementado, tags organizados</td>
+            </tr>
+            <tr>
+                <td>Facebook Pixel</td>
+                <td>☐</td>
+                <td>Instalado, eventos configurados, CAPI activo</td>
+            </tr>
+            <tr>
+                <td>Eventos personalizados</td>
+                <td>☐</td>
+                <td>Clics en botones, formularios, descargas</td>
+            </tr>
+            <tr>
+                <td>Embudos de conversión</td>
+                <td>☐</td>
+                <td>Definidos, monitoreados, optimizados</td>
+            </tr>
+            <tr>
+                <td>Dashboards</td>
+                <td>☐</td>
+                <td>Creados, automatizados, compartidos</td>
+            </tr>
+        </table>
+
+        <p><strong>Eventos Trackeados:</strong> _____</p>
+        <p><strong>Objetivo:</strong> 100% de acciones críticas trackeadas</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>Plan de Acción Priorizado</h2>
+    <div class="section">
+        <h3>Impacto Alto - Esfuerzo Bajo (Hacer Primero)</h3>
+        <ol>
+            <li>Optimizar imágenes (comprimir, WebP)</li>
+            <li>Habilitar caché del navegador</li>
+            <li>Minificar CSS y JS</li>
+            <li>Agregar alt text a imágenes</li>
+            <li>Mejorar meta descriptions</li>
+            <li>Configurar Google Analytics y Search Console</li>
+        </ol>
+
+        <h3>Impacto Alto - Esfuerzo Alto (Planificar)</h3>
+        <ol>
+            <li>Rediseñar para mobile-first</li>
+            <li>Crear contenido de calidad (1,500+ palabras)</li>
+            <li>Implementar CDN</li>
+            <li>Optimizar funnel de conversión</li>
+            <li>Construir backlinks de calidad</li>
+        </ol>
+
+        <h3>Impacto Bajo - Esfuerzo Bajo (Hacer Cuando Puedas)</h3>
+        <ol>
+            <li>Agregar breadcrumbs</li>
+            <li>Implementar schema markup</li>
+            <li>Mejorar búsqueda interna</li>
+            <li>Agregar chat en vivo</li>
+        </ol>
+    </div>
+
+    <h2>Resumen de Puntuaciones</h2>
+    <div class="section">
+        <table>
+            <tr>
+                <th>Categoría</th>
+                <th>Puntuación Actual</th>
+                <th>Objetivo</th>
+                <th>Prioridad</th>
+            </tr>
+            <tr>
+                <td>Velocidad y Performance</td>
+                <td>_____ / 100</td>
+                <td>90+</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>SEO Técnico</td>
+                <td>_____ / 100</td>
+                <td>95+</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>SEO On-Page</td>
+                <td>_____ / 100</td>
+                <td>85+</td>
+                <td>Media</td>
+            </tr>
+            <tr>
+                <td>Experiencia de Usuario</td>
+                <td>_____ / 100</td>
+                <td>90+</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Conversión (CRO)</td>
+                <td>_____ %</td>
+                <td>3-5%</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Seguridad</td>
+                <td>_____ / 100</td>
+                <td>100</td>
+                <td>Crítica</td>
+            </tr>
+            <tr>
+                <td>Analytics</td>
+                <td>_____ / 100</td>
+                <td>100</td>
+                <td>Media</td>
+            </tr>
+        </table>
+
+        <p style="margin-top: 30px;"><strong>Puntuación Global:</strong> _____ / 100</p>
+
+        <div class="highlight-box">
+            <strong>Próximos Pasos:</strong>
+            <ol>
+                <li>Completar esta auditoría (2-4 horas)</li>
+                <li>Priorizar mejoras según impacto/esfuerzo</li>
+                <li>Crear plan de implementación (30-90 días)</li>
+                <li>Asignar responsables y deadlines</li>
+                <li>Re-auditar cada mes para medir progreso</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>AMC Agency Web</strong></p>
+        <p>Especialistas en Optimización Web y Performance</p>
+        <p>📧 contacto@amcagencyweb.com | 🌐 www.amcagencyweb.com</p>
+        <p style="margin-top: 20px; font-size: 12px;">
+            © 2024 AMC Agency Web. Todos los derechos reservados.<br>
+            Este template es para uso educativo y profesional. Adapta según tus necesidades específicas.
+        </p>
+    </div>
+</body>
+
+</html>

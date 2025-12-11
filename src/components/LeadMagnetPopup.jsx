@@ -19,21 +19,21 @@ const LeadMagnetPopup = () => {
             title: 'Guía Completa de SEO 2024',
             description: 'Estrategias probadas para dominar Google',
             icon: '📈',
-            downloadUrl: '/downloads/guia-seo-2024.pdf'
+            downloadUrl: '/downloads/guia-seo-2024.html'
         },
         {
             id: 'marketing-checklist',
             title: 'Checklist de Marketing Digital',
             description: '50+ tácticas para aumentar conversiones',
             icon: '✅',
-            downloadUrl: '/downloads/checklist-marketing.pdf'
+            downloadUrl: '/downloads/checklist-marketing.html'
         },
         {
             id: 'web-optimization',
             title: 'Template de Optimización Web',
             description: 'Plantilla para auditar y mejorar tu sitio',
             icon: '🚀',
-            downloadUrl: '/downloads/template-optimizacion.pdf'
+            downloadUrl: '/downloads/template-optimizacion.html'
         }
     ];
 
