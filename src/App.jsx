@@ -118,13 +118,4 @@ function App() {
   );
 }
 
-// Helper component to track page views on route change
-const AnalyticsTracker = () => {
-  const location = useLocation();
-  useEffect(() => {
-    trackPageView();
-  }, [location]);
-  return null;
-};
-
 export default App;
