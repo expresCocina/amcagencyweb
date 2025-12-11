@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { trackPageView } from '../utils/analytics';
+import { trackPageView } from '../../utils/analytics';
 import './ResourcePage.css';
 
 const TemplateOptimizacionPage = () => {
