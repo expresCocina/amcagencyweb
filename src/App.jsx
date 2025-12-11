@@ -46,6 +46,11 @@ const BoutiqueDemo = lazy(() => import('./pages/demos/BoutiqueDemo'));
 const ConsultoraDemo = lazy(() => import('./pages/demos/ConsultoraDemo'));
 const DemoGeneratorPage = lazy(() => import('./pages/DemoGeneratorPage'));
 
+// Lazy Load Resource Pages
+const GuiaSEOPage = lazy(() => import('./pages/recursos/GuiaSEOPage'));
+const ChecklistMarketingPage = lazy(() => import('./pages/recursos/ChecklistMarketingPage'));
+const TemplateOptimizacionPage = lazy(() => import('./pages/recursos/TemplateOptimizacionPage'));
+
 function App() {
   const [isDelayedLoaded, setIsDelayedLoaded] = useState(false);
 
@@ -100,6 +105,11 @@ function App() {
                 {/* Portal Routes */}
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/dashboard" element={<ClientDashboard />} />
+
+                {/* Resource Pages */}
+                <Route path="/recursos/guia-seo-2024" element={<GuiaSEOPage />} />
+                <Route path="/recursos/checklist-marketing" element={<ChecklistMarketingPage />} />
+                <Route path="/recursos/template-optimizacion" element={<TemplateOptimizacionPage />} />
 
               </Routes>
             </Suspense>

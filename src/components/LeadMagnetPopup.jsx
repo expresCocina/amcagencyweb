@@ -19,21 +19,21 @@ const LeadMagnetPopup = () => {
             title: 'Guía Completa de SEO 2024',
             description: 'Estrategias probadas para dominar Google',
             icon: '📈',
-            downloadUrl: '/downloads/guia-seo-2024.html'
+            pageUrl: '/recursos/guia-seo-2024'
         },
         {
             id: 'marketing-checklist',
             title: 'Checklist de Marketing Digital',
             description: '50+ tácticas para aumentar conversiones',
             icon: '✅',
-            downloadUrl: '/downloads/checklist-marketing.html'
+            pageUrl: '/recursos/checklist-marketing'
         },
         {
             id: 'web-optimization',
             title: 'Template de Optimización Web',
             description: 'Plantilla para auditar y mejorar tu sitio',
             icon: '🚀',
-            downloadUrl: '/downloads/template-optimizacion.html'
+            pageUrl: '/recursos/template-optimizacion'
         }
     ];
 
@@ -148,16 +148,16 @@ const LeadMagnetPopup = () => {
         }
     };
 
-    const handleDownload = (resource) => {
-        trackEvent('Download', {
+    const handleViewResource = (resource) => {
+        trackEvent('ViewContent', {
             category: 'Engagement',
-            label: 'Lead Magnet Download',
+            label: 'Lead Magnet Resource View',
             resource_id: resource.id,
             resource_name: resource.title
         });
 
-        // Trigger download
-        window.open(resource.downloadUrl, '_blank');
+        // Redirect to resource page
+        window.location.href = resource.pageUrl;
     };
 
     if (!isVisible) return null;
@@ -246,7 +246,7 @@ const LeadMagnetPopup = () => {
                     <div className="popup-success">
                         <div className="success-icon">🎉</div>
                         <h2 className="gradient-text">¡Gracias por Suscribirte!</h2>
-                        <p>Tus recursos están listos para descargar:</p>
+                        <p>Tus recursos están listos. Haz clic para verlos:</p>
 
                         <div className="download-links">
                             {resources
@@ -254,15 +254,15 @@ const LeadMagnetPopup = () => {
                                 .map(resource => (
                                     <button
                                         key={resource.id}
-                                        onClick={() => handleDownload(resource)}
+                                        onClick={() => handleViewResource(resource)}
                                         className="download-btn"
                                     >
                                         <span className="download-icon">{resource.icon}</span>
                                         <span className="download-text">
                                             <strong>{resource.title}</strong>
-                                            <small>Haz clic para descargar</small>
+                                            <small>Haz clic para ver el recurso</small>
                                         </span>
-                                        <span className="download-arrow">⬇️</span>
+                                        <span className="download-arrow">→</span>
                                     </button>
                                 ))}
                         </div>
