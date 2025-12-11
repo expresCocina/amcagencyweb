@@ -15,6 +15,7 @@ import { CurrencyProvider } from './contexts/CurrencyContext';
 // Lazy Load Non-Critical Components
 const WhatsAppButton = lazy(() => import('./components/WhatsAppButton'));
 const ChatWidget = lazy(() => import('./components/ChatWidget'));
+const LeadMagnetPopup = lazy(() => import('./components/LeadMagnetPopup'));
 
 // Lazy Load Pages
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -109,6 +110,7 @@ function App() {
               <Suspense fallback={null}>
                 <WhatsAppButton />
                 <ChatWidget />
+                <LeadMagnetPopup />
               </Suspense>
             )}
           </div>

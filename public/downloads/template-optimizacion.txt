@@ -1,0 +1,16 @@
+# Template de Optimización Web
+
+## AMC Agency Web
+
+Este es un archivo placeholder para el Template de Optimización.
+
+En producción, este archivo debería ser reemplazado con un PDF profesional que contenga:
+
+- Velocidad de carga
+- SEO técnico
+- UX/UI
+- Conversión
+- Seguridad
+- Analytics
+
+Nombre del archivo: template-optimizacion.pdf

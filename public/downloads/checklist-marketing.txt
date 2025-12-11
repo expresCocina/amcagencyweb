@@ -1,0 +1,16 @@
+# Checklist de Marketing Digital
+
+## AMC Agency Web
+
+Este es un archivo placeholder para el Checklist de Marketing.
+
+En producción, este archivo debería ser reemplazado con un PDF profesional que contenga:
+
+- Estrategia de contenido
+- Redes sociales
+- Email marketing
+- Publicidad pagada
+- Automatización
+- Conversión y retención
+
+Nombre del archivo: checklist-marketing.pdf

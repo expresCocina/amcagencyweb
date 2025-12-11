@@ -1,0 +1,22 @@
+# Guía Completa de SEO 2024
+
+## AMC Agency Web
+
+Este es un archivo placeholder para la Guía de SEO.
+
+En producción, este archivo debería ser reemplazado con un PDF profesional que contenga:
+
+- Fundamentos de SEO
+- Investigación de palabras clave
+- SEO On-Page
+- Link building
+- SEO técnico
+- Métricas y análisis
+
+Para generar el PDF real, puedes usar herramientas como:
+- Canva
+- Adobe InDesign
+- Google Docs → Exportar como PDF
+- Microsoft Word → Guardar como PDF
+
+Nombre del archivo: guia-seo-2024.pdf
