@@ -123,14 +123,35 @@ const LeadMagnetPopup = () => {
         setIsLoading(true);
 
         try {
-            // Track lead event
+            // Track as Lead (for Facebook/GA4 Lead conversion)
             trackEvent('Lead', {
                 category: 'Lead Generation',
                 label: 'Lead Magnet Subscribe',
                 resources: formData.selectedResources.join(','),
-                resource_count: formData.selectedResources.length
+                resource_count: formData.selectedResources.length,
+                email: formData.email,
+                name: formData.name || 'Not provided'
             }, {
                 email: formData.email
+            });
+
+            // Track as Contact (for general contact tracking)
+            trackEvent('Contact', {
+                category: 'Lead Generation',
+                label: 'Lead Magnet Contact',
+                source: 'lead_magnet_popup',
+                email: formData.email,
+                name: formData.name || 'Not provided',
+                resources: formData.selectedResources.join(',')
+            });
+
+            // Track as Subscribe (for email list tracking)
+            trackEvent('Subscribe', {
+                category: 'Email Marketing',
+                label: 'Lead Magnet Subscription',
+                email: formData.email,
+                name: formData.name || 'Not provided',
+                resources: formData.selectedResources.join(',')
             });
 
             // Simulate API call (replace with actual backend call)
